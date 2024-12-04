@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #faf5f5;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #eceff1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #313a49;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  font-size: 1rem;
+  color: #181a1d;
+  font-weight: 500;
+}
+
+.navbar a.btn {
+  background-color: #e8e9ec;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.navbar a.btn:hover {
+  background-color: #5990e7;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  color: #4a5568;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+  width: 200px;
+}
+
+.search-bar input::placeholder {
+  color: #a0aec0;
+}
+
+.search-bar input:focus {
+  border-color: #d7dbe2;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #898f9b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #174ea6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f8efef;
+  color: #2d3748;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #141414;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #272727;
+}
+
+/* Trending Topics */
+.trending {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  color: #161618;
+  margin-bottom: 20px;
+}
+
+.trending ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.trending li {
+  background-color: #ffffff;
+  color: #4a5568;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.trending li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog List */
+.blog-list {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-list article {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.blog-list article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog-list h3 {
+  font-size: 1.5rem;
+  color: #2563eb;
+}
+
+.blog-list p {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.blog-list a {
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 60px 20px;
+  background-color: #edf2f7;
+  color: #4a5568;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 12px;
+  width: 250px;
+  border: 2px solid #e2e8f0;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #4a5568;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #174ea6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #2d3748;
+  color: white;
+  font-size: 0.9rem;
+}
